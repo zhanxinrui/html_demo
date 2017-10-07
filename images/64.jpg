@@ -1,0 +1,13 @@
+import os
+import sys
+
+path=r"C:\Users\Administrator\Desktop\日常\css+html+js\JavaScript\瀑布流布局\自己实现原生Js\images"
+i =1
+for(path,dirs,files)in os.walk(path):
+    for filename in files:
+        
+        newname = str(i)+'.jpg'
+        i=i+1
+        if not(os.rename(path+"\\"+filename,path+"\\"+newname)):
+            pass
+        
